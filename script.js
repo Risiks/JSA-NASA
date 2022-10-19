@@ -1,5 +1,13 @@
 const chargement = document.querySelector('.chargement');
 
+
+function heure() {  
+    document.querySelector('.heureActuelle').innerText= new Date().toLocaleTimeString();
+      } 
+    heure();
+    const heureActuelle = setInterval(heure, 1000);
+
+
 function HTMLinXHR() {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://api.nasa.gov/planetary/apod?api_key=PcVQebW8dytUuElmEiS9zubacfcZ2ouI6BWUnCzz');
