@@ -21,7 +21,7 @@ function HTMLinXHR() {
             const img = document.createElement('img');
             const h1 = document.createElement('h1');
             const h2 = document.createElement('h2');
-            const h3 = document.createElement('h4');
+            const h3 = document.createElement('h3');
             img.src = data.url;
             h1.textContent = data.title;
             h2.textContent = data.date;
